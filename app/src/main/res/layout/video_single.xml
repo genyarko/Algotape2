@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+
+
+
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/videoView_single" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:id="@+id/uploadVideo"
+            android:src="@drawable/baseline_broadcast_on_home_24"
+            android:contentDescription="@string/upload_video">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uploaded_by"
+            android:id="@+id/uploadedBy"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:gravity="end">
+
+        </TextView>
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar_single"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txtTitle_single" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_below="@+id/txtTitle_single"
+            android:id="@+id/txtDesc_single" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEvent"><RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Event"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/upload_img_card"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="32dp"
+                android:elevation="20dp"
+                android:layout_height="wrap_content">
+
+
+                <!-- Upload image -->
+                <ImageView
+                    android:id="@+id/event_image_View"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/baseline_add_location_24" />
+
+
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+        <!-- Music Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <!-- Music Title -->
+            <EditText
+                android:id="@+id/event_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event title"
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <!-- Music Artist -->
+            <EditText
+                android:id="@+id/event_category_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Category"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+            <!-- Music Artist -->
+            <EditText
+                android:id="@+id/event_available_for_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Available for"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+            <!-- Producer -->
+            <EditText
+                android:id="@+id/event_location_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location type"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+            <!-- Instrumentalist -->
+            <EditText
+                android:id="@+id/event_price_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Price"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+            <!-- Label -->
+            <EditText
+                android:id="@+id/event_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+            <EditText
+                android:id="@+id/event_date_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+
+                android:inputType="date|datetime"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+            <EditText
+                android:id="@+id/event_description_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:minLines="3"
+                android:scrollbars="vertical"
+
+                android:textSize="16sp"
+
+                />
+            <!-- Video layout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/eventVideoBtn"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                app:cornerRadius="32dp"
+                android:backgroundTint="@color/white"
+                android:text="Choose Video"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Upload Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/upload_event_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:cornerRadius="32dp"
+        android:backgroundTint="@color/white"
+        android:text="Upload"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+
+
+</ScrollView>

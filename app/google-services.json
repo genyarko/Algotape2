@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987293356029",
+    "project_id": "algotapes2",
+    "storage_bucket": "algotapes2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987293356029:android:21b5d47c1f64db3e461394",
+        "android_client_info": {
+          "package_name": "com.example.algotapes2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDTNNMkmpeULcyTcEvl8_QttgGGiqlRGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

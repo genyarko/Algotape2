@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadVideo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!-- Title Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_upload_title"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="32dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/upload_video"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:elevation="10dp"
+                    android:elegantTextHeight="true"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/upload_img_card"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="32dp"
+                android:elevation="20dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black">
+
+
+                <!-- Upload image -->
+                <ImageView
+                    android:id="@+id/music_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/baseline_cloud_upload_24"
+                    android:contentDescription="Upload video" />
+
+
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+        <!-- Music Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <!-- Music Title -->
+            <EditText
+                android:id="@+id/video_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/video_title"
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <!-- Music Artist -->
+            <EditText
+                android:id="@+id/video_artist_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/artist"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+            <!-- Music Artist -->
+            <EditText
+                android:id="@+id/genreET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/genre"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+            <!-- Producer -->
+            <EditText
+                android:id="@+id/video_producer_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/producer"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+            <!-- Instrumentalist -->
+            <EditText
+                android:id="@+id/video_instrumentalist_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/instrumentalist"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+            <!-- Label -->
+            <EditText
+                android:id="@+id/video_label_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/production_company"
+
+                android:inputType="textPersonName"
+
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+            <!-- Video layout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/musicVideo"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                app:cornerRadius="32dp"
+                android:backgroundTint="@color/white"
+                android:text="Choose Video"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- Upload Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/upload_music_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                app:cornerRadius="32dp"
+                android:backgroundTint="@color/white"
+                android:text="Upload"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

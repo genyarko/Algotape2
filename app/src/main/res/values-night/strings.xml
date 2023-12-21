@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uploaded_by">Uploaded by</string>
+    <string name="production_company">Production company</string>
+    <string name="instrumentalist">Instrumentalist</string>
+    <string name="producer">Producer</string>
+    <string name="genre">Genre</string>
+    <string name="artist">Artist</string>
+    <string name="video_title">Video Title</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="send_comment_button">Send comment button</string>
+    <string name="input_comment">Input comment</string>
+    <string name="type_comment_here">Type Comment Here</string>
+    <string name="user_image">User Image</string>
+    <string name="like_button">Like Button</string>
+    <string name="post_image">Post image</string>
+    <string name="post_description">Post Description</string>
+    <string name="hours_ago">Hours Ago</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="type_email_here">Type Email here</string>
+    <string name="type_password_here">Type Password Here</string>
+    <string name="need_an_account">Need an account?</string>
+    <string name="sign_up">SIGN UP!</string>
+    <string name="password">PASSWORD</string>
+    <string name="upload_profile_image">Upload profile image</string>
+    <string name="sign_in_to_continue">Sign in to continue.</string>
+    <string name="email">EMAIL</string>
+    <string name="register">Register</string>
+    <string name="usernameCapitals">USERNAME</string>
+    <string name="usernameTitle">UserName</string>
+    <string name="emailNormal">Email</string>
+    <string name="label">Label:</string>
+</resources>
