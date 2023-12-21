@@ -1,4 +1,4 @@
-# Algotape2
+# Algotape2 
 
 Overview
 AlgoTapes2 is an Android app that leverages machine learning for real-time object detection and text recognition using the device camera. This solo project demonstrates the integration of ML Kit, CameraX API, and other technologies to create a seamless and efficient user experience. 
@@ -29,6 +29,9 @@ Log in or sign up for an account.
 Explore the features: real-time object detection, text recognition, and more.
 Contributions
 Contributions are welcome! Please follow the guidelines in CONTRIBUTING.md.
+
+App source code
+https://github.com/genyarko/Algotape2/tree/master
 
 License
 This project is licensed under the MIT License.
